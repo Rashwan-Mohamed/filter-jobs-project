@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Spartan";
+}
+.heading {
+  width: 100%;
+  background-color: hsl(180, 29%, 50%);
+  height: 20vh;
+  background-image: url(bg-header-mobile.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: hsl(180, 52%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+.senior {
+  width: 100%;
+  background-color: hsl(180, 52%, 96%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.element {
+  position: relative;
+  border-radius: 10px;
+  background-color: white;
+  margin: 2rem;
+  padding: 1rem;
+  padding-top: 45px;
+  width: 90%;
+  box-sizing: border-box;
+  border-left: 5px solid hsl(180, 29%, 50%);
+}
+.container {
+  background-color: white;
+  box-sizing: border-box;
+  width: 90%;
+  border-radius: 10px;
+}
+.btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  padding: 10px 10px;
+  margin: 10px;
+  border-radius: 15px;
+  font-weight: 600;
+  width: 100px;
+  text-transform: capitalize;
+  transition: all 0.6s linear;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  color: white;
+  background-color: hsl(180, 14%, 20%);
+}
+.ninoo {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: hsl(180, 29%, 50%);
+  background-color: hsl(180, 31%, 95%);
+  padding: 0;
+  margin: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 100px;
+  height: 25px;
+  text-transform: capitalize;
+  transition: all 0.6s linear;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.pero,
+.awesome {
+  display: inline-flex;
+  padding: 0 10px;
+  align-items: center;
+  height: 100%;
+}
+.awesome {
+  padding: 0;
+  justify-content: center;
+  font-size: 1.2em;
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  transition: all 0.3s linear;
+}
+.awesome:hover {
+  background-color: hsl(180, 14%, 20%);
+}
+.coco {
+  width: 55px;
+  position: absolute;
+  top: -20px;
+}
+
+.shortly {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: hsl(180, 29%, 50%);
+}
+
+.developer {
+  padding-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.ago {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  padding-bottom: 15px;
+  border-bottom: 0.75px solid hsl(180, 8%, 52%);
+  color: hsl(180, 8%, 52%);
+  font-size: 13px;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+}
+ul li:after {
+  content: " \2022";
+}
+ul li:last-child:after {
+  content: none;
+}
+
+.DENOO {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.new {
+  margin: 0 10px;
+  background-color: teal;
+}
+.featured {
+  background-color: hsl(180, 14%, 20%);
+}
+.DENOO span {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 4px 6px;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  align-items: center;
+  font-size: 14px;
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .element {
+    position: relative;
+    border-radius: 10px;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: auto 1fr 200px 1fr;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid hsl(180, 29%, 50%);
+  }
+
+  .coco {
+    position: static;
+    padding: 0;
+    width: auto;
+  }
+
+  .btncon {
+    grid-column: 4/5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .deno {
+    margin: auto 1rem;
+  }
+  .ago {
+    border-bottom: none;
+    color: hsl(180, 8%, 52%);
+    font-size: 14px;
+  }
+
+  .developer {
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-size: 20px;
+  }
+  .shortly {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .heading {
+    background-image: url(bg-header-desktop.svg);
+  }
+
+  .wrapper {
+    padding-top: 5rem;
+  }
+}
+
+.hide {
+  display: none !important ;
+}
